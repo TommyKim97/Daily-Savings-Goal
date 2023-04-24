@@ -13,19 +13,19 @@
       <h1 class="ir">티끌 모아 태산</h1>
       <img src="./images/logo.png" alt="티끌 모아 태산 로고" class="img-logo" />
     </header>
-    <main>
+    <main id="app">
       <section class="sec-intro">
         <h2 class="ir"></h2>
         <p class="txt-intro">
           막연하게 "1억 모으기" 등의 목표를 세워보신 적이 있으신가요?
         </p>
         <p class="txt-howto">
-          티끌 모아 태산에서 <strong>목표 금액을 설정</strong>하고, 목표를
-          달성하기 위한 <strong>기간별 저금액</strong>을 알아보세요!
+          티끌 모아 태산에서 <strong>목표 금액을 설정</strong>하고,<br />
+          목표를 달성하기 위한 <strong>기간별 저금액</strong>을 알아보세요!
         </p>
       </section>
       <section class="sec-goal">
-        <h2 class="ir"></h2>
+        <h2 class="ir">목표 금액 입력</h2>
         <p class="txt-goal">목표 금액 :</p>
         <p>
           <input
@@ -36,11 +36,15 @@
           />
           원
         </p>
+      </section>
+      <section class="sec-date">
+        <h2 class="ir">목표 기한 입력</h2>
         <p class="txt-date">목표 기한 :</p>
-        <input type="date" class="inp-date" />
-
-        <button type="button" class="btn-result">결과 보기</button>
-        <button type="button" class="btn-share">공유 하기</button>
+        <p><input type="date" class="inp-date" required /> 까지</p>
+      </section>
+      <section class="btn-wrap">
+        <button type="button" class="btn-result">🔍 결과 보기</button>
+        <button type="button" class="btn-share">🔗 공유 하기</button>
       </section>
     </main>
     <footer class="footer">
@@ -53,12 +57,21 @@
       <article class="modal-wrap">
         <h3 class="tit-modal">🧐 당신의 티끌이 태산이 되려면 🧐</h3>
         <section class="sec-result">
-          <p class="txt-result"></p>
+          <p class="txt-result">
+            <span id="textDate"></span> 까지<br />
+            <span id="textGoal"></span> 원을 모으기 위해서<br />
+            매일 <span id="textResult"></span> 원을 모으셔야 합니다!
+          </p>
         </section>
 
         <button type="button" class="btn-lucky">🍀 행운 부적 받기</button>
-        <button type="button" class="btn-close">닫기</button>
+        <button type="button" class="btn-close">
+          <img src="./images/close-icon.png" alt="모달창 닫기" />
+        </button>
       </article>
+    </article>
+    <article id="lucky">
+      <h2 class="ir">행운의 부적</h2>
     </article>
   </body>
   <script src="./js/index.js"></script>
