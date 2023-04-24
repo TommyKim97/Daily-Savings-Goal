@@ -1,0 +1,190 @@
+/* 공통 */
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ir {
+  position: absolute;
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+* {
+  margin: 0 auto;
+  font-family: "GangwonEdu_OTFBoldA";
+  font-size: 24px;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* 레이아웃 */
+body {
+  position: relative;
+  width: 100%;
+  background-color: rgb(231, 255, 136);
+  margin: 0 auto;
+  text-align: center;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* header */
+.img-logo {
+  margin: 40px auto;
+  display: block;
+  width: 564px;
+  height: 112px;
+}
+
+/* intro text */
+.sec-intro {
+  margin: 30px 0;
+  line-height: 30px;
+}
+
+.sec-intro .txt-howto strong {
+  color: rgb(225, 126, 20);
+}
+
+/* goal */
+.sec-goal {
+  display: flex;
+  margin: 40px 0;
+}
+
+.sec-goal .inp-goal::placeholder {
+  padding-left: 15px;
+}
+
+.sec-goal .txt-goal,
+.sec-date .txt-date {
+  line-height: 30px;
+}
+
+.sec-goal .inp-goal,
+.sec-date .inp-date {
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.sec-date {
+  display: flex;
+}
+
+.btn-result,
+.btn-share {
+  margin-top: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(156, 132, 208);
+}
+.btn-result {
+  margin-top: 50px;
+  margin-right: 20px;
+}
+
+/* footer */
+.footer {
+  width: 564px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 20px;
+}
+
+.txt-footer {
+  display: inline-block;
+}
+
+/* modal */
+#modal {
+  font-family: "GangwonEdu_OTFBoldA";
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+#modal .modal-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 550px;
+  background-color: rgb(255, 192, 192);
+  border-radius: 10px;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.3);
+}
+
+#modal .tit-modal {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+#modal .txt-result {
+  margin: 100px 0;
+
+  font-size: 30px;
+  line-height: 60px;
+}
+
+#modal .sec-result span {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(125, 63, 158);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+}
+.btn-result,
+.btn-share,
+#modal .btn-lucky {
+  width: 170px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(178, 157, 224);
+}
+
+#modal .btn-lucky {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#modal .btn-close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+
+#modal .img-lucky {
+  margin: 25px 0;
+  width: 60%;
+  border-radius: 10px;
+}
+
+#modal .txt-lucky {
+  line-height: 28px;
+  font-size: 20px;
+}
