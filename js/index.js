@@ -40,3 +40,18 @@ btnClose.addEventListener("click", (event) => {
   inpDate.value = null;
   inpGoal = null;
 });
+
+btnShare.addEventListener("click", (event) => {
+  let url = window.location.href;
+  navigator.clipboard
+    .writeText(url)
+    .then(() => {
+      alert(
+        "URL이 복사되었습니다. 이 홈페이지를 소개해주고 싶은 친구에게 전해주세요!"
+      );
+    })
+    .catch((err) => {
+      alert("URL이 복사되지 않았습니다. 호환되는 브라우저가 아닙니다.");
+      console.log(err);
+    });
+});
