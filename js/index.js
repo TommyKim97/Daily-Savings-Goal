@@ -34,3 +34,9 @@ btnResult.addEventListener("click", (event) => {
   }
   document.querySelectorAll("input").value = null;
 });
+
+btnClose.addEventListener("click", (event) => {
+  modal.style.display = "none";
+  inpDate.value = null;
+  inpGoal = null;
+});
