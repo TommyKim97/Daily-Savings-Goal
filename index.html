@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>티끌 모아 태산</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="ir">티끌 모아 태산</h1>
+      <img src="./images/logo.png" alt="티끌 모아 태산 로고" class="img-logo" />
+    </header>
+    <main>
+      <section class="sec-intro">
+        <h2 class="ir"></h2>
+        <p class="txt-intro">
+          막연하게 "1억 모으기" 등의 목표를 세워보신 적이 있으신가요?
+        </p>
+        <p class="txt-howto">
+          티끌 모아 태산에서 <strong>목표 금액을 설정</strong>하고, 목표를
+          달성하기 위한 <strong>기간별 저금액</strong>을 알아보세요!
+        </p>
+      </section>
+      <section class="sec-goal">
+        <h2 class="ir"></h2>
+        <p class="txt-goal">목표 금액 :</p>
+        <p>
+          <input
+            type="number"
+            class="inp-goal"
+            placeholder="예) 100000"
+            required
+          />
+          원
+        </p>
+        <p class="txt-date">목표 기한 :</p>
+        <input type="date" class="inp-date" />
+
+        <button type="button" class="btn-result">결과 보기</button>
+        <button type="button" class="btn-share">공유 하기</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <h2 class="ir">하단 홈페이지 정보</h2>
+      <p class="txt-footer">copyright©TommyKim97 All Rights Reserved</p>
+      <!-- <address></address> -->
+    </footer>
+    <article id="modal">
+      <h2 class="ir">결과 모달창</h2>
+      <article class="modal-wrap">
+        <h3 class="tit-modal">🧐 당신의 티끌이 태산이 되려면 🧐</h3>
+        <section class="sec-result">
+          <p class="txt-result"></p>
+        </section>
+
+        <button type="button" class="btn-lucky">🍀 행운 부적 받기</button>
+        <button type="button" class="btn-close">닫기</button>
+      </article>
+    </article>
+  </body>
+  <script src="./js/index.js"></script>
+</html>
