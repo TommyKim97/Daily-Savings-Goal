@@ -32,13 +32,12 @@ btnResult.addEventListener("click", (event) => {
 
     modal.style.display = "block";
   }
-  document.querySelectorAll("input").value = null;
 });
 
 btnClose.addEventListener("click", (event) => {
   modal.style.display = "none";
-  inpDate.value = null;
-  inpGoal = null;
+  document.querySelector(".inp-date").value = "";
+  document.querySelector(".inp-goal").value = "";
 });
 
 btnShare.addEventListener("click", (event) => {
@@ -54,4 +53,14 @@ btnShare.addEventListener("click", (event) => {
       alert("URL이 복사되지 않았습니다. 호환되는 브라우저가 아닙니다.");
       console.log(err);
     });
+});
+
+btnLucky.addEventListener("click", (event) => {
+  document.querySelector(".tit-modal").textContent =
+    "🍀 당신을 위한 행운 부적 🍀";
+  document.querySelector(".sec-result").innerHTML = `
+          <img src="./images/lucky.png" alt="행운 부적 받기" class ="img-lucky"/>
+          <p class="txt-lucky">당신의 목표를 응원합니다!<br/>오늘도 행운 가득한 하루 되세요!</p>
+      `;
+  btnLucky.style.display = "none";
 });
