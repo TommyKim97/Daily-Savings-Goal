@@ -20,7 +20,7 @@ btnResult.addEventListener("click", (event) => {
     alert("앗, 입력을 하지 않으셨어요!");
   } else if (inpGoal <= 0) {
     alert("목표 금액은 0원보다 큰 금액으로 설정해주세요!");
-  } else if (now.getDate() >= dday.getDate()) {
+  } else if (now >= dday) {
     alert("목표 날짜는 현재 이후의 날짜로 설정해주세요!");
   } else {
     const passedTime = now.getTime() - dday.getTime();
