@@ -3,15 +3,15 @@ const btnShare = document.querySelector(".btn-share");
 const btnLucky = document.querySelector(".btn-lucky");
 const btnClose = document.querySelector(".btn-close");
 
+const txtGoal = document.querySelector("#textGoal");
+const txtDate = document.querySelector("#textDate");
+const txtResult = document.querySelector("#textResult");
+
 const modal = document.querySelector("#modal");
 
 btnResult.addEventListener("click", (event) => {
   const inpGoal = parseInt(document.querySelector(".inp-goal").value);
   const inpDate = document.querySelector(".inp-date");
-
-  const txtDate = document.querySelector("#textDate");
-  const txtGoal = document.querySelector("#textGoal");
-  const txtResult = document.querySelector("#textResult");
 
   const now = new Date();
   const dday = new Date(inpDate.value);
@@ -38,6 +38,9 @@ btnClose.addEventListener("click", (event) => {
   modal.style.display = "none";
   document.querySelector(".inp-date").value = "";
   document.querySelector(".inp-goal").value = "";
+  txtGoal.textContent = "";
+  txtDate.textContent = "";
+  txtResult.textContent = "";
 });
 
 btnShare.addEventListener("click", (event) => {
