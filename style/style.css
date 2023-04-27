@@ -55,7 +55,7 @@ body {
 }
 
 .sec-intro .txt-howto strong {
-  color: rgb(225, 126, 20);
+  color: rgba(225, 136, 38, 1);
 }
 
 /* goal */
@@ -111,7 +111,8 @@ body {
 }
 
 .link-github {
-  color: rgb(225, 126, 20);
+  color: rgba(225, 136, 38, 1);
+
   font-weight: bold;
 }
 
@@ -250,7 +251,7 @@ body {
   /* modal */
   #modal .modal-wrap {
     width: 70vw;
-    height: 60vh;
+    height: 70vh;
   }
 
   #modal .tit-modal {
@@ -259,9 +260,9 @@ body {
   }
 
   #modal .txt-result {
-    margin: 50px 20px;
-    font-size: 20px;
-    line-height: 48px;
+    margin: 90px 20px;
+    font-size: 24px;
+    line-height: 50px;
   }
 
   #modal .sec-result span {
