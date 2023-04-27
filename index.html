@@ -28,9 +28,11 @@
         <h2 class="ir">목표 금액 입력</h2>
         <p class="txt-goal">목표 금액 :</p>
         <p>
+          <label for="inpGoal" class="ir">목표 금액 입력</label>
           <input
             type="number"
             class="inp-goal"
+            id="inpGoal"
             placeholder="예) 100000"
             required
           />
@@ -40,7 +42,10 @@
       <section class="sec-date">
         <h2 class="ir">목표 기한 입력</h2>
         <p class="txt-date">목표 기한 :</p>
-        <p><input type="date" class="inp-date" required /> 까지</p>
+        <p>
+          <label for="inpDate" class="ir">목표 기한 입력</label>
+          <input type="date" class="inp-date" id="inpDate" required /> 까지
+        </p>
       </section>
       <section class="btn-wrap">
         <button type="button" class="btn-result">🔍 결과 보기</button>
@@ -60,23 +65,14 @@
     <article id="modal">
       <h2 class="ir">결과 모달창</h2>
       <article class="modal-wrap">
-        <h3 class="tit-modal">🧐 당신의 티끌이 태산이 되려면 🧐</h3>
-        <section class="sec-result">
-          <p class="txt-result">
-            <span id="textDate"></span> 까지<br />
-            <span id="textGoal"></span> 원을 모으기 위해서<br />
-            매일 <span id="textResult"></span> 원을 모으셔야 합니다!
-          </p>
-        </section>
+        <h3 class="tit-modal"></h3>
+        <section class="sec-result"></section>
 
         <button type="button" class="btn-lucky">🍀 행운 부적 받기</button>
         <button type="button" class="btn-close">
           <img src="./images/close-icon.png" alt="모달창 닫기" />
         </button>
       </article>
-    </article>
-    <article id="lucky">
-      <h2 class="ir">행운의 부적</h2>
     </article>
   </body>
   <script src="./js/index.js"></script>
