@@ -4,6 +4,8 @@
 
 ## 저축 목표 세우기 애플리케이션, 💰티끌 모아 태산💰
 
+[🔗 실행 링크](https://tommykim97.github.io/Daily-Savings-Goal/)
+
 ### 🔍 프로젝트 소개 | About Project
 
 목표 금액을 입력하고 목표 기한을 설정하면,
